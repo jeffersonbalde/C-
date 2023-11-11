@@ -19,27 +19,46 @@ int main (){
             cout << "C. Social" << endl;
             cout << "Enter a Letter: " << endl;
             cin >> types;
-            switch (types){
-                case 'A':
-                case 'a':
-                    cout << "A. Artistic" << endl;
-                    break;
+
+            // switch (types){
+            //     case 'A':
+            //     case 'a':
+            //         cout << "A. Artistic" << endl;
+            //         break;
                     
-                case 'B':
-                case 'b':
-                    cout << "B. Scientific" << endl;
-                    break;
+            //     case 'B':
+            //     case 'b':
+            //         cout << "B. Scientific" << endl;
+            //         break;
                     
-                case 'C':
-                case 'c':
-                    cout << "C. Social" << endl;
-                    break;
+            //     case 'C':
+            //     case 'c':
+            //         cout << "C. Social" << endl;
+            //         break;
                     
-                default:
-                    cout << "INVALID!" << endl;
+            //     default:
+            //         cout << "INVALID!" << endl;
+            // }
+
+            // Code nako yan
+            while(types != 'A' && types != 'a' && types != 'B' && types != 'b' && types != 'C' && types != 'c') {
+                cout << "INVALID INPUT PLEASE TRY AGAIN!" << '\n';
+                cin >> types;
             }
+
+            if(types == 'A' || types == 'a') {
+                cout << "A. Artistic" << endl;
+            }
+
+            if(types == 'B' || types == 'b') {
+                cout << "B. Scientific" << endl;
+            }
+
+            if(types == 'C' || types == 'c') {
+                cout << "C. Social" << endl;
+            }
+        
             break;
-            
         case 2:
             cout << "Choose your Proficiency Areas: " << endl;
             cout << "D. Math" << endl;
